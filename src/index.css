@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #1A5FB4; /* Atlantic Blue */
+  --color-primary-dark: #124483;
+  --color-secondary: #2ECC71; /* Emerald Green */
+  --color-secondary-dark: #27ae60;
+  --color-accent-yellow: #F1C40F;
+  --color-accent-red: #E31C1C;
+  --color-accent-red-dark: #991313;
+  --color-bg-light: #F8F9FA;
+  --color-text-dark: #1A1A1A;
+  --color-text-muted: #6C757D;
+  
+  --radius-xl: 1.5rem;
+  --radius-2xl: 1.75rem; /* 28px */
+  --radius-3xl: 2.25rem;
+}
+
+:root {
+  background-color: #E2E8F0;
+  color: #1A1A1A;
+}
+
+@layer base {
+  * {
+    @apply border-gray-200 outline-none;
+  }
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/85 backdrop-blur-md border border-white/30;
+}
+
+.chunky-btn-primary {
+  @apply bg-primary text-white shadow-[0_8px_0_#124483] active:translate-y-1 active:shadow-[0_4px_0_#124483] transition-all;
+}
+
+.chunky-btn-secondary {
+  @apply bg-secondary text-white shadow-[0_8px_0_#27ae60] active:translate-y-1 active:shadow-[0_4px_0_#27ae60] transition-all;
+}
+
+.chunky-btn-danger {
+  @apply bg-accent-red text-white shadow-[0_8px_0_#991313] active:translate-y-1 active:shadow-[0_4px_0_#991313] transition-all;
+}
+
+.glass-dark {
+  @apply bg-black/40 backdrop-blur-xl border border-white/10;
+}
+
+.neomorphic-button {
+  box-shadow: 0 8px 24px rgba(0, 62, 122, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+

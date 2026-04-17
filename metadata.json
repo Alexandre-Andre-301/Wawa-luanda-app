@@ -1,0 +1,6 @@
+{
+  "name": "Wawa Transit",
+  "description": "A modern public transport system for Luanda, connecting commuters with informal minibus drivers.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": []
+}
